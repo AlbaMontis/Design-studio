@@ -1,5 +1,5 @@
 main {
-    background: url(/img/jumbotron.jpg) center center no-repeat;
+    background: url(../img/jumbotron.jpg) center center no-repeat;
     background-size: cover;
 }
 
