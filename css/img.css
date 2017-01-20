@@ -4,16 +4,16 @@ main {
 }
 
 #interior {
-  background: url(/img/livingroom.jpg) center center no-repeat;
+  background: url(../img/livingroom.jpg) center center no-repeat;
   background-size: cover;
 }
 
 #furniture {
-  background: url(/img/furniture.jpg) center center no-repeat;
+  background: url(../img/furniture.jpg) center center no-repeat;
   background-size: cover;
 }
 
 #accessories {
-  background: url(/img/accessories.jpg) center center no-repeat;
+  background: url(../img/accessories.jpg) center center no-repeat;
   background-size: cover;
 }
