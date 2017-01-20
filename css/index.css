@@ -1,0 +1,72 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main,
+#interior,
+#furniture,
+#accessories {
+    height: 100vh;
+}
+
+main {
+    text-align: center;
+}
+
+nav li,
+.social {
+  display: inline-block;
+}
+
+header {
+    margin-top: 15%;
+}
+
+h1 {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size:40rem;
+}
+
+.container {
+    position: relative;
+}
+
+aside {
+    background: #9695a0;
+    opacity: 0.6;
+    width: 25%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#who,
+#contacts {
+    width: 45%;
+}
+
+#contacts,
+#address {
+    float: right;
+}
+
+footer {
+    clear: both;
+    background: #9695a0;
+    height: 20vh;
+}
+
+input,
+textarea,
+#address {
+    width: 45%;
+}
+
+.social {
+    width: 20px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    text-align: center;
+}
