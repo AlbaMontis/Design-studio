@@ -6,7 +6,7 @@
     <title>Montis - design studio.</title>
     <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/img.css">
+    <link rel="stylesheet" href="css/backgrounds.css">
 </head>
 <body>
     <!-- Home -->
@@ -17,10 +17,9 @@
         <nav>
             <ul>
                 <li><a href="#home">HOME</a></li>
-                <li><a href="#interior">INTERIOR</a></li>
-                <li><a href="#furniture">FURNITURE</a></li>
-                <li><a href="#accessories">ACCESSORIES</a></li>
-                <li><a href="#about">CONTACTS</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#aboutUs">ABOUT US</a></li>
+                <li><a href="#contactUs">CONTACTS</a></li>
             </ul>
         </nav>
         <header>
@@ -30,11 +29,19 @@
     </main>
     <!--/ Home -->
     
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <h2>OUR PROJECTS</h2>
+        <a href="javascript:void(0)">Interior</a>
+        <a href="javascript:void(0)">Furniture</a>
+        <a href="javascript:void(0)">Accessories</a>
+    </div>
+    
     <!-- Interior -->
     <section id="interior" class="container">
+        <h2>Interior</h2>
         <div class="carousel"></div>
         <aside>
-            <h2>Interior</h2>
             <ul>
                 <li><a href="javascript:void(0)">Kitchen</a></li>
                 <li><a href="javascript:void(0)">Living room</a></li>
@@ -47,10 +54,10 @@
     <!--/ Interior -->
     
     <!-- Furniture -->
-    <section id="furniture" class="container">
+    <section id="furniture" class="container hidden">
+        <h2>Furniture</h2>
         <div class="carousel"></div>
         <aside>
-            <h2>Furniture</h2>
             <ul>
                 <li><a href="javascript:void(0)">Table</a></li>
                 <li><a href="javascript:void(0)">Chair</a></li>
@@ -61,10 +68,10 @@
     <!--/ Furniture -->
     
     <!-- Accessories -->
-    <section id="accessories" class="container">
+    <section id="accessories" class="container hidden">
+        <h2>Accessories</h2>
         <div class="carousel"></div>
         <aside>
-            <h2>Accessories</h2>
             <ul>
                 <li><a href="javascript:void(0)">Lighting</a></li>
                 <li><a href="javascript:void(0)">Pillow</a></li>
@@ -72,36 +79,42 @@
         </aside>
     </section>
     <!--/ Accessories -->
+    <!--/ Portfolio -->
     
-    <!-- Contacts -->
-    <section id="about">
-        <div id="contacts">
-            <div id="address">
-                <address>
-                    <p>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America.</p>
-                    <p>T: (202) 456-1111</p>
-                    <p>M: (202) 456-1212</p>
-                </address>
-                <div class="social">f</div>
-                <div class="social">in</div>
-                <div class="social">t</div>
-                <div class="social">p</div>
-            </div>
-            <h3>CONTACT US</h3>
-            <form>
-                <input type="text" name="name" placeholder="Your name" required><br>
-                <input type="email" name="email" placeholder="Your email" required><br>
-                <input type="tel" name="telephone" placeholder="Your telephone"><br>
-                <textarea name="message" placeholder="Your message"></textarea><br>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-        <div id="who">
+    <!-- About us -->
+    <section>
+        <div id="aboutUs">
             <h3>WHO WE ARE</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
     </section>
-    <!--/ Contacts -->
+    <!--/ About us -->
+    
+    <!-- Contact us-->
+    <section id="contactUs">
+        <h3>GET IN TOUCH</h3>
+        <form>
+            <input type="text" name="name" placeholder="Your name" required><br>
+            <input type="email" name="email" placeholder="Your email" required><br>
+            <textarea name="message" placeholder="Your message"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <!--/ Contact us -->
+    
+    <!-- Address -->
+    <section id="address">
+        <address>
+            <p>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America.</p>
+            <p>T: (202) 456-1111</p>
+            <p>M: (202) 456-1212</p>
+        </address>
+        <div class="social">f</div>
+        <div class="social">in</div>
+        <div class="social">t</div>
+        <div class="social">p</div>
+    </section>
+    <!--/ Address -->
     
     <!-- Footer -->
     <footer></footer>

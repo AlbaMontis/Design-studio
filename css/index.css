@@ -1,4 +1,5 @@
 body {
+    max-width: 1920px;
     box-sizing: border-box;
     margin: 0;
 }
@@ -25,7 +26,7 @@ header {
 
 h1 {
     font-family: 'Nothing You Could Do', cursive;
-    font-size: 40px;
+    font-size: 8rem;
 }
 
 .container {
@@ -42,26 +43,10 @@ aside {
     right: 0;
 }
 
-#who,
-#contacts {
-    width: 45%;
-}
-
-#contacts,
-#address {
-    float: right;
-}
-
 footer {
     clear: both;
     background: #9695a0;
     height: 20vh;
-}
-
-input,
-textarea,
-#address {
-    width: 45%;
 }
 
 .social {
@@ -69,4 +54,8 @@ textarea,
     border: 1px solid #000;
     border-radius: 50%;
     text-align: center;
+}
+
+.hidden {
+    display: none;
 }
