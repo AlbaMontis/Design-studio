@@ -1,18 +1,37 @@
-body {
-    max-width: 1920px;
-    box-sizing: border-box;
-    margin: 0;
+body, html {
+  max-width: 1920px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: line-through;
 }
 
 main,
 #interior,
 #furniture,
 #accessories {
-    height: 100vh;
+  height: 100vh;
 }
 
 main {
-    text-align: center;
+  text-align: center;
 }
 
 nav li,
@@ -20,42 +39,142 @@ nav li,
   display: inline-block;
 }
 
-header {
-    margin-top: 15%;
-}
-
 h1 {
-    font-family: 'Nothing You Could Do', cursive;
-    font-size: 8rem;
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 10vw;
 }
 
 .container {
-    position: relative;
+  position: relative;
 }
 
-aside {
-    background: #9695a0;
-    opacity: 0.6;
-    width: 25%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    right: 0;
+/* Portfolio */
+.cover {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: left;
+  background: #9695a0;
+  opacity: 0.3;
+  color: #000;
+}
+
+.cover h2 {
+  position: relative;
+  z-index: 100;
+  font-size: 10em;
 }
 
 footer {
-    clear: both;
-    background: #9695a0;
-    height: 20vh;
+  background: #9695a0;
+  height: 20vh;
 }
 
 .social {
-    width: 20px;
-    border: 1px solid #000;
-    border-radius: 50%;
-    text-align: center;
+  width: 20px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  text-align: center;
 }
 
 .hidden {
-    display: none;
+  display: none;
+}
+
+#interior,
+#furniture,
+#accessories {
+  transition: all 1s;
+  order: 1;
+  position: relative;
+}
+
+#interior:target,
+#furniture:target,
+#accessories:target {
+  display: block;
+  z-index: 200;
+  order: -1;
+  position: absolute;
+  top: 0vh;
+}
+
+#interior:target {
+  position: relative;
+}
+
+.content {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  padding: 10vh 0;
+}
+
+.flexBox {
+  display: -webkit-flex;
+  -webkit-flex-flow: wrap;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="email"] {
+  flex: 1 auto;
+  margin: 1%;
+  height: 30px;
+}
+
+textarea {
+  width: 100%;
+  margin: 1%;
+}
+
+button[type="submit"] {
+  margin: auto;
+}
+
+.icons {
+  padding: 0 70px;
+}
+
+.icons p {
+  padding-top: 105px;
+}
+
+.icons select {
+  -webkit-appearance: button;
+}
+
+#about-img {
+  flex: 1 auto;
+  height: auto;
+  width: 60vw;
+  margin-right: 150px;
+}
+
+#about-text {
+  flex: 1 auto;
+  width: 30vw;
+  background: #fff;
+  position: absolute;
+  right: -10vw;
+  padding: 30px;
+  text-align: justify;
+}
+
+#contactUs {
+  background: #9695a0;
+}
+
+#map {
+  flex: 2 auto;
+  height: 60vh;
+  margin: 1%;
+}
+
+#address {
+  margin: 0 30px;
 }
