@@ -23,6 +23,22 @@ a:hover {
   text-decoration: line-through;
 }
 
+.flexBox {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
 main,
 #interior,
 #furniture,
@@ -30,18 +46,35 @@ main,
   height: 100vh;
 }
 
-main {
-  text-align: center;
+#logo {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  z-index: 400;
+  left: 0;
 }
 
-nav li,
+#nav-top {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 3vw 5vw 0 3vw;
+}
+
+#nav-top li,
 .social {
   display: inline-block;
 }
 
+#nav-top li {
+  padding: 0 1vw;
+}
+
 h1 {
-  font-family: 'Nothing You Could Do', cursive;
-  font-size: 10vw;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: lighter;
+  font-size: 12vw;
+  /*text-transform: uppercase;*/
 }
 
 .container {
@@ -64,6 +97,7 @@ h1 {
   position: relative;
   z-index: 100;
   font-size: 10em;
+  padding-top: 35vh;
 }
 
 footer {
@@ -85,6 +119,9 @@ footer {
 #interior,
 #furniture,
 #accessories {
+  -webkit-transition: all 1s;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
   transition: all 1s;
   order: 1;
   position: relative;
@@ -95,9 +132,11 @@ footer {
 #accessories:target {
   display: block;
   z-index: 200;
-  order: -1;
   position: absolute;
   top: 0vh;
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
 }
 
 #interior:target {
@@ -111,20 +150,14 @@ footer {
   padding: 10vh 0;
 }
 
-.flexBox {
-  display: -webkit-flex;
-  -webkit-flex-flow: wrap;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
 input[type="text"],
 input[type="email"] {
-  flex: 1 auto;
   margin: 1%;
   height: 30px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 auto;
+  flex: 1 auto;
+  
 }
 
 textarea {
@@ -144,25 +177,26 @@ button[type="submit"] {
   padding-top: 105px;
 }
 
-.icons select {
-  -webkit-appearance: button;
-}
-
 #about-img {
-  flex: 1 auto;
   height: auto;
   width: 60vw;
   margin-right: 150px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 auto;
+  flex: 1 auto;
 }
 
 #about-text {
-  flex: 1 auto;
   width: 30vw;
   background: #fff;
   position: absolute;
   right: -10vw;
   padding: 30px;
   text-align: justify;
+  font-family: 'Droid Serif', serif;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 auto;
+  flex: 1 auto;
 }
 
 #contactUs {
@@ -170,9 +204,11 @@ button[type="submit"] {
 }
 
 #map {
-  flex: 2 auto;
   height: 60vh;
   margin: 1%;
+  -webkit-box-flex: 2;
+  -ms-flex: 2 auto;
+  flex: 2 auto;
 }
 
 #address {
