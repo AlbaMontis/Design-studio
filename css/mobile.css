@@ -13,7 +13,7 @@ input[type="email"],
 
 #wraper {
   float: right;
-  margin-top: 10vh;
+  margin-top: 10vmin;
   position: relative;
   z-index: 300;
   width: 50vmin;
@@ -21,6 +21,7 @@ input[type="email"],
   background: #fff;
   border-left: 5px solid #fff;
   margin-right: -45vmin;
+  -webkit-transition: margin-right 0.5s ease-out;
   transition: margin-right 0.5s ease-out;
 }
 
@@ -30,11 +31,12 @@ input[type="email"],
   width: 20px;
   height: 20px;
   display: block;
-  transform: rotate(45deg);
   top: -50vh;
   left: -15px;
   position: relative;
   z-index: 300;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 #wraper:hover {
@@ -62,4 +64,14 @@ address,
 .cover h2 {
   font-size: 2.5em;
   padding-top: 8vh;
+}
+
+@media all and (orientation:landscape) {
+  .cover span {
+    display: inline;
+  }
+  
+  .cover h2 {
+    padding: 40vh 10vh;
+  }
 }
