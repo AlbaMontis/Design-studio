@@ -11,38 +11,6 @@ input[type="email"],
   overflow-x: hidden;
 }
 
-#wraper {
-  float: right;
-  margin-top: 10vmin;
-  position: relative;
-  z-index: 300;
-  width: 50vmin;
-  height: 100vh;
-  background: #fff;
-  border-left: 5px solid #fff;
-  margin-right: -45vmin;
-  -webkit-transition: margin-right 0.5s ease-out;
-  transition: margin-right 0.5s ease-out;
-}
-
-#wraper::after {
-  content: " ";
-  background: #fff;
-  width: 20px;
-  height: 20px;
-  display: block;
-  top: -50vh;
-  left: -15px;
-  position: relative;
-  z-index: 300;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-#wraper:hover {
-  margin-right: -3vmin;
-}
-
 .content,
 #map,
 address,
@@ -64,6 +32,44 @@ address,
 .cover h2 {
   font-size: 2.5em;
   padding-top: 8vh;
+}
+
+#logo {
+  width: 50px;
+  float: none;
+  padding-left: 20px;
+}
+
+#burger-button {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  z-index: 300;
+  position: relative;
+  float: right;
+}
+
+#nav-top {
+  padding: 0;
+  background-color: #fff;
+}
+
+#burger-menu {
+  
+}
+
+#tab-list {
+  text-align: center;
+  margin-top: 0;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  width: 100vw;
+}
+
+#tab-list li {
+  display: block;
+  padding: 10px;
 }
 
 @media all and (orientation:landscape) {

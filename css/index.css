@@ -3,6 +3,8 @@ body, html {
   box-sizing: border-box;
   overflow-x: hidden;
   padding: 0;
+  margin: 0 auto;
+  height: 100vh;
 }
 
 h1, h2, h3, p {
@@ -47,6 +49,10 @@ a:hover {
   align-items: center;
 }
 
+header {
+  margin-top: 15vh;
+}
+
 main,
 #interior,
 #furniture,
@@ -66,12 +72,12 @@ main,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 3vw 5vw 0 3vw;
+  padding: 3vh 5vw 0 3vw;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
 
-#nav-top li,
+#tab-list li,
 .social {
   display: inline-block;
 }
@@ -80,11 +86,14 @@ main,
   padding: 0 1vw;
 }
 
+#logo {
+  float: left;
+}
+
 h1 {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 12vw;
-  /*text-transform: uppercase;*/
 }
 
 .container {
@@ -119,6 +128,10 @@ h1 {
 
 .hidden {
   display: none;
+}
+
+#portfolio-menu {
+  margin-bottom: 20px;
 }
 
 #interior,
@@ -210,6 +223,7 @@ button[type="submit"] {
 #about-img {
   height: auto;
   width: 60vw;
+  min-width: 40vw;
   margin-right: 150px;
   -webkit-box-flex: 1;
   -ms-flex: 1 auto;
@@ -254,3 +268,21 @@ footer {
   background: #393b42;
   height: 20vh;
 }
+
+.status {
+  height: 40vh;
+}
+
+#message p {
+  font-weight: bold;
+  padding-top: 15%;
+}
+
+
+
+/*#contactUs,*/
+/*#aboutUs,*/
+/*#portfolio,*/
+/*#home {*/
+/*  margin-top: 10vh;*/
+/*}*/
