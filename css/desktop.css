@@ -1,0 +1,7 @@
+#logo {
+  float: left;
+}
+
+#tab-list li {
+  display: inline-block;
+}

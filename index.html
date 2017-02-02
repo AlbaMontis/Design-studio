@@ -8,22 +8,28 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Lato:300,400|Open+Sans+Condensed:300" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/backgrounds.css">
+  <link rel="stylesheet" media="screen and (min-width:769px)" href="css/desktop.css">
   <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
 </head>
 <body>
 <!-- Home -->
-<main id="home">
+<main id="home" class="container">
   <nav id="nav-top">
     <div id="burger-button" class="hidden">
         <p> . . . </p>
     </div>
-    <a href="#home">
-      <div id="logo" class="icons"></div>
-    </a>
+    <!--<a href="#home">-->
+    <!--  <div id="logo" class="icons"></div>-->
+    <!--</a>-->
     <div id="burger-menu">
       <ul id="tab-list">
         <li><a href="#home">HOME</a></li>
         <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li>
+          <a href="#home">
+            <div id="logo" class="icons"></div>
+          </a>
+        </li>
         <li><a href="#aboutUs">ABOUT US</a></li>
         <li><a href="#contactUs">CONTACTS</a></li>
       </ul>
@@ -31,7 +37,7 @@
   </nav>
   <div class="content">
     <header>
-      <h1>MontiS</h1>
+      <h1>Montis</h1>
       <p>design studio</p>
     </header>
   </div>
@@ -39,7 +45,7 @@
 <!--/ Home -->
 
 <!-- Portfolio -->
-<div id="portfolio">
+<div id="portfolio" class="container">
   <div class="content">
     <h2>OUR LATEST PROJECTS</h2>
     <!-- Portfolio navigation -->
@@ -65,7 +71,7 @@
     <button id='toggle'>Choose</button>
     <!--/ Portfolio navigation -->
   </div>
-  <div class="container flexBox">
+  <div class="container flexBox hidden">
     <!-- Interior -->
     <section id="interior">
         <div class="carousel">
@@ -103,24 +109,22 @@
 <!--/ Portfolio -->
 
 <!-- About us -->
-<section>
-    <div id="aboutUs">
-      <div class="content container">
-        <h2>WHO WE ARE</h2>
-        <div class="flexBox">
-          <img src="img/aboutUs.jpg" id="about-img" alt="Designer photo">
-          <div id="about-text">
-            <p><b>W</b>e are interior designers in Lviv that offer a bespoke service to create beautiful, functional spaces for residential clients, commercial firms and the retail and hospitality sectors. Also we offer our handmade unique furniture and interior accessories.</p>
-            <p><b>A</b>ll of our projects are directed by our deep understanding of client’s needs. Whether we’re renewing the interior decoration or undertaking a complex residential renovation, we work closely with the client to develop a solution that reflects their needs and personality. Our approach leads to interior spaces that enhance the existing architecture, look absolutely stunning and bring pleasure to all who live and work there.</p>
-          </div>
-        </div>
+<section id="aboutUs" class="container">
+  <div class="content">
+    <h2>WHO WE ARE</h2>
+    <div class="flexBox">
+      <img src="img/aboutUs.jpg" id="about-img" alt="Designer photo">
+      <div id="about-text">
+        <p><b>W</b>e are interior designers in Lviv that offer a bespoke service to create beautiful, functional spaces for residential clients, commercial firms and the retail and hospitality sectors. Also we offer our handmade unique furniture and interior accessories.</p>
+        <p><b>A</b>ll of our projects are directed by our deep understanding of client’s needs. Whether we’re renewing the interior decoration or undertaking a complex residential renovation, we work closely with the client to develop a solution that reflects their needs and personality. Our approach leads to interior spaces that enhance the existing architecture, look absolutely stunning and bring pleasure to all who live and work there.</p>
       </div>
     </div>
+  </div>
 </section>
 <!--/ About us -->
 
 <!-- Contact us-->
-<section id="contactUs">
+<section id="contactUs" class="container">
   <div class="content">
     <h3>GET IN TOUCH</h3>
     <p>Contact us by filling out the form below if you would like more information about our products, or have any questions about us as a company.</p>
@@ -152,8 +156,8 @@
 <!--/ Contact us -->
 
 <!-- Address -->
-<section id="address">
-  <div class="flexBox">
+<section id="address" class="container">
+  <div class="content flexBox">
     <div id="map"></div>
     <address>
       <p>3200 Teatralna str, 4, Lviv, Ukraine.</p>
