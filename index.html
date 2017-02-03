@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Lato:300,400|Open+Sans+Condensed:300" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/backgrounds.css">
+  <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" media="screen and (min-width:769px)" href="css/desktop.css">
   <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
 </head>
@@ -46,66 +47,79 @@
 
 <!-- Portfolio -->
 <div id="portfolio" class="container">
-  <div class="content">
-    <h2>OUR LATEST PROJECTS</h2>
-    <!-- Portfolio navigation -->
-    <div id="wraper" class="hidden">
-      <nav id="portfolio-menu" class="flexBox">
-        <a href="#interior">
-          <div id="interior-icon" class="icons">
-            <p>Interior</p>
-          </div>
-        </a>
-        <a href="#furniture">
-          <div id="furniture-icon" class="icons">
-            <p>Furniture</p>
-          </div>
-        </a>
-        <a href="#accessories">
-          <div id="accessories-icon" class="icons">
-            <p>Accessories</p>
-          </div>
-        </a>
-      </nav>
-    </div>
-    <button id='toggle'>Choose</button>
-    <!--/ Portfolio navigation -->
-  </div>
-  <div class="container flexBox hidden">
+  <h2>OUR LATEST PROJECTS</h2>
+  <div class="container flexBox">
     <!-- Interior -->
-    <section id="interior">
-        <div class="carousel">
-          <div class="cover">
-            <!-- "Interior" for vertical text on mobile -->
-            <h2><span>I</span><span>N</span><span>T</span><span>E</span><span>R</span><span>I</span><span>O</span><span>R</span></h2>
-          </div>
+    <section id="interior" class="portfolio-section">
+      <div class="portfolio-cover">
+        <div class="portfolio-card">
+          <h2 data="interior">INTERIOR</h2>
         </div>
+      </div>
     </section>
     <!--/ Interior -->
     
     <!-- Furniture -->
-    <section id="furniture" class="hidden">
-        <div class="carousel">
-          <div class="cover">
-            <!-- "Furniture" for vertical text on mobile -->
-            <h2><span>F</span><span>U</span><span>R</span><span>N</span><span>I</span><span>T</span><span>U</span><span>R</span><span>E</span></h2>
-          </div>
+    <section id="furniture" class="portfolio-section">
+      <div class="portfolio-cover">
+        <div class="portfolio-card">
+          <h2 data="furniture">FURNITURE</h2>
         </div>
+      </div>
     </section>
     <!--/ Furniture -->
     
     <!-- Accessories -->
-    <section id="accessories" class="hidden">
-        <div class="carousel">
-          <div class="cover">
-            <!-- "Accessories" for vertical text on mobile -->
-            <h2><span>A</span><span>C</span><span>C</span><span>E</span><span>S</span><span>S</span><span>O</span><span>R</span><span>Y</span></h2>
-          </div>
+    <section id="accessories" class="portfolio-section">
+      <div class="portfolio-cover">
+        <div class="portfolio-card">
+          <h2 data="accessories">ACCESSORIES</h2>
         </div>
+      </div>
     </section>
     <!--/ Accessories -->
   </div>
+  <div id="modal" class="modal hidden  flexBox">
+    <span class="close">&times;</span>
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
 </div>
+
+    <div id="interior-modal-content" class="modal-content hidden">
+      <div class="slide hidden">
+        <img src="img/interior/livingroom.png" alt="Livingroom interior">
+      </div>
+      <div class="slide hidden">
+        <img src="img/interior/cabinet.png" alt="Cabinet interior">
+      </div>
+      <div class="slide hidden">
+        <img src="img/interior/bedroom.png" alt="Bedroom interior">
+      </div>
+    </div>
+    
+    <div id="furniture-modal-content" class="modal-content hidden">
+      <div class="slide hidden">
+        <img src="img/furniture/bench.png" alt="Bench">
+      </div>
+      <div class="slide hidden">
+        <img src="img/furniture/chair.png" alt="Chair">
+      </div>
+      <div class="slide hidden">
+        <img src="img/furniture/table.png" alt="Table">
+      </div>
+    </div>
+    
+    <div id="accessories-modal-content" class="modal-content hidden">
+      <div class="slide hidden">
+        <img src="" alt="">
+      </div>
+      <div class="slide hidden">
+        <img src="" alt="">
+      </div>
+      <div class="slide hidden">
+        <img src="" alt="">
+      </div>
+    </div>
 <!--/ Portfolio -->
 
 <!-- About us -->
@@ -183,6 +197,7 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjOnfcR4CfNrVNR3UyVjbVJ-eM-3di4EY&callback=initMap"
   async defer></script>
 <script src="script/menus.js"></script>
+<script src="script/portfolioModal.js"></script>
 <script src="script/form.js"></script>
 </body>
 </html>

@@ -11,13 +11,9 @@ function toggle(element) {
 
 function initEvent() {
   /** @type {Element} */ var tabList = document.getElementById('tab-list');
-  /** @type {Element} */ var menu = document.getElementById('wraper');
   /** @type {Element} */ var burgerMenu = document.getElementById('burger-button');
-  /** @type {Element} */ var btn = document.getElementById('toggle');
   var body = document.getElementsByTagName('body')[0];
-  btn.addEventListener('click', function() {
-    toggle(menu);
-  });
+  
   burgerMenu.addEventListener('click', function() {
     toggle(tabList);
     body.classList.toggle('stop-scroll');

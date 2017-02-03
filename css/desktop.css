@@ -5,3 +5,8 @@
 #tab-list li {
   display: inline-block;
 }
+
+.portfolio-section {
+  height: 60vh;
+  width: 33.33%;
+}

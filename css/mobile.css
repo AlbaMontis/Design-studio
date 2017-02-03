@@ -18,17 +18,6 @@ address,
   position: static;
 }
 
-.cover span {
-  display: block;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.cover h2 {
-  font-size: 2.5em;
-  padding-top: 8vh;
-}
-
 #burger-button {
   width: 40px;
   height: 40px;
@@ -61,8 +50,34 @@ address,
   color: #fff;
 }
 
+.portfolio-card h2 {
+  font-size: 1.5em;
+  padding: 20% 0;
+}
+
+.portfolio-section {
+  height: 50vh;
+  width: 100%;
+}
+
+.slide img {
+  width: 100%;
+}
+
 @media all and (orientation:landscape) {
   #tab-list li {
     padding: 3% 0;
+  }
+  
+  .portfolio-section {
+    height: 90vh;
+  }
+  
+  .portfolio-card h2 {
+    padding: 12% 0;
+  }
+  
+  .slide img {
+    height: 100%;
   }
 }

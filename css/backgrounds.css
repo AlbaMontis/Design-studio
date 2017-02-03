@@ -4,7 +4,7 @@ main {
 }
 
 #interior {
-  background: url(../img/livingroom.jpg) center center no-repeat;
+  background: url(../img/interior/livingroom.png) center center no-repeat;
   background-size: cover;
 }
 
