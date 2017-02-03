@@ -12,10 +12,8 @@ h1, h2, h3, p {
 
 h2, h3 {
   font-family: 'Lato', sans-serif;
-}
+  padding: 10vmin 0;
 
-h2 {
-  padding-bottom: 10vmin;
 }
 
 ul {
@@ -49,7 +47,12 @@ a:hover {
 }
 
 header {
-  margin-top: 15%;
+  padding-top: 10%;
+}
+
+header p {
+  font-size: 2rem;
+  font-family: 'Lato', sans-serif;
 }
 
 main {
@@ -60,14 +63,14 @@ main {
   width: 70px;
   height: 70px;
   position: relative;
-  z-index: 400;
+  z-index: 2;
 }
 
 #nav-top {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 3% 5% 0 3%;
+  padding-top: 3%;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
@@ -94,7 +97,6 @@ h1 {
 .content {
   margin: 0 auto;
   width: 60%;
-  padding: 10vmin 0;
 }
 
 /* Portfolio */
@@ -131,7 +133,7 @@ h1 {
 }
 
 .portfolio-card h2 {
-  z-index: 100;
+  z-index: 2;
   font-size: 2rem;
   padding: 22% 0;
 }
@@ -147,26 +149,9 @@ h1 {
   display: none;
 }
 
-/*#interior:target,*/
-/*#furniture:target,*/
-/*#accessories:target {*/
-/*  display: block;*/
-/*  z-index: 200;*/
-/*  position: absolute;*/
-/*  top: 0;*/
-/*  -webkit-box-ordinal-group: 0;*/
-/*  -ms-flex-order: -1;*/
-/*  order: -1;*/
-/*}*/
-
-/*#interior:target {*/
-/*  position: relative;*/
-/*}*/
-
 #contactUs p {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  padding-top: 10px;
   padding-bottom: 30px;
 }
 
@@ -247,6 +232,8 @@ button[type="submit"] {
 #contactUs {
   background: #5e606c;
   color: #fff;
+  margin: 10vmin 0;
+  padding-bottom: 10vmin;
 }
 
 #map {
@@ -270,15 +257,6 @@ footer {
   font-weight: bold;
   padding-top: 15%;
 }
-
-
-
-/*#contactUs,*/
-/*#aboutUs,*/
-/*#portfolio,*/
-/*#home {*/
-/*  margin-top: 10vh;*/
-/*}*/
 
 .stop-scroll {
   overflow-y: hidden;

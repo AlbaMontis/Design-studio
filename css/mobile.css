@@ -2,6 +2,16 @@ h1 {
   font-size: 5rem;
 }
 
+header {
+  padding-top: 40%;
+}
+
+.header-logo {
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
 #portfolio-menu {
   height: 100vh;
 }
@@ -22,7 +32,7 @@ address,
   width: 40px;
   height: 40px;
   background-color: #fff;
-  z-index: 300;
+  z-index: 4;
   position: fixed;
   right: 0;
 }
@@ -32,6 +42,7 @@ address,
 }
 
 #tab-list {
+  z-index: 3;
   position: fixed;
   text-align: center;
   margin-top: 0;
@@ -67,6 +78,10 @@ address,
 @media all and (orientation:landscape) {
   #tab-list li {
     padding: 3% 0;
+  }
+  
+  header {
+    padding-top: 10%;
   }
   
   .portfolio-section {

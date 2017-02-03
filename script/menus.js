@@ -24,11 +24,13 @@ function hideMenu() {
   var screenWidth = screen.width;
   /** @type {Element} */ var burgerMenu = document.getElementById('burger-button');
   /** @type {Element} */ var tabList = document.getElementById('tab-list');
+  /** @type {Element} */ var headerLogo = document.querySelector('.header-logo');
   /** @type {Element} */ var logo = tabList.childNodes[5];
   if (screenWidth < 768) {
     toggle(burgerMenu);
     toggle(tabList);
     toggle(logo);
+    toggle(headerLogo);
   }
 }
 function disable_scroll() {
