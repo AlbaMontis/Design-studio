@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" media="screen and (min-width:769px)" href="css/desktop.css">
   <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
+  <link rel="stylesheet" href="css/animation.css">
 </head>
 <body>
 <!-- Home -->
@@ -21,24 +22,22 @@
     </div>
     
     <div id="burger-menu">
-      <ul id="tab-list" class="hidden">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
+      <ul id="tab-list">
+        <li><a href="#home" class="btn">HOME</a></li>
+        <li><a href="#portfolio" class="btn">PORTFOLIO</a></li>
         <li>
-          <a href="#home">
+          <a href="#home" class="btn">
             <div id="logo" class="logo"></div>
           </a>
         </li>
-        <li><a href="#aboutUs">ABOUT US</a></li>
-        <li><a href="#contactUs">CONTACTS</a></li>
+        <li><a href="#about" class="btn">ABOUT US</a></li>
+        <li><a href="#contacts" class="btn">CONTACTS</a></li>
       </ul>
     </div>
   </nav>
   <div class="content">
     <header>
-      <a href="#home">
-        <div class="header-logo logo"></div>
-      </a>
+      <div class="header-logo logo"></div>
       <h1>Montis</h1>
       <p>design studio</p>
     </header>
@@ -128,7 +127,7 @@
 <!--/ Portfolio -->
 
 <!-- About us -->
-<section id="aboutUs" class="container">
+<section id="about" class="container">
   <div class="content">
     <h2>WHO WE ARE</h2>
     <div class="flexBox">
@@ -143,7 +142,7 @@
 <!--/ About us -->
 
 <!-- Contact us-->
-<section id="contactUs" class="container">
+<section id="contacts" class="container">
   <div class="content">
     <h3>GET IN TOUCH</h3>
     <p>Contact us by filling out the form below if you would like more information about our products, or have any questions about us as a company.</p>
@@ -204,5 +203,6 @@
 <script src="script/menus.js"></script>
 <script src="script/portfolioModal.js"></script>
 <script src="script/form.js"></script>
+<script src="script/smoothScroll.js"></script>
 </body>
 </html>

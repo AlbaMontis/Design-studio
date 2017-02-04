@@ -153,7 +153,7 @@ h1 {
   display: none;
 }
 
-#contactUs p {
+#contacts p {
   font-weight: 300;
   padding: 0 30px 30px;
 }
@@ -231,7 +231,7 @@ button[type="submit"] {
   padding-bottom: 5vmin;
 }
 
-#contactUs {
+#contacts {
   background: #5e606c;
   color: #fff;
   margin: 10vmin 0;

@@ -16,8 +16,20 @@ function initEvent() {
   
   burgerMenu.addEventListener('click', function() {
     toggle(tabList);
-    body.classList.toggle('stop-scroll');
+    // body.classList.toggle('stop-scroll');
   });
+  
+  document.addEventListener('click', function(e) {
+    e = e || window.event;
+    /** @type {EventTarget} */ var targ = e.target || e.srcElement;
+    if (targ.nodeType === 3) { 
+      targ = targ.parentNode;
+    }
+    if (!tabList.classList.contains('hidden') &&
+      targ.getAttribute('id') !== 'burger-button') {
+      toggle(tabList);
+    }
+  })
 }
 
 function hideMenu() {

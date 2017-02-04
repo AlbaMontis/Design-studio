@@ -1,9 +1,9 @@
 .slide img {
   height: 100%;
-  z-index: 4;
 }
 
 .modal {
+  z-index: 4;
   position: fixed;
   left: 0;
   top: 0;

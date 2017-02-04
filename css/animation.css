@@ -1,0 +1,13 @@
+header {
+  animation-name: fade-in;
+  animation-duration: 3s;
+}
+
+@keyframes fade-in {
+  from {opacity: 0.1;}
+  to {opacity: 0.9;}
+}
+
+.in-transition { 
+  transition: transform 900ms ease;
+}
