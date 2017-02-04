@@ -2,11 +2,21 @@ h1 {
   font-size: 5rem;
 }
 
+#logo,
+#tab-list li:nth-child(3) {
+  display: none;
+}
+
+#burger-button {
+  display: block;
+}
+
 header {
   padding-top: 40%;
 }
 
 .header-logo {
+  display: block;
   margin: 0 auto;
   z-index: 1;
   position: relative;
@@ -72,6 +82,10 @@ address,
 }
 
 .slide img {
+  width: 100%;
+}
+
+input {
   width: 100%;
 }
 

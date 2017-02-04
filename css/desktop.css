@@ -2,6 +2,14 @@
   float: left;
 }
 
+.header-logo {
+  display: none;
+}
+
+#tab-list {
+  display: block;
+}
+
 #tab-list li {
   display: inline-block;
 }
