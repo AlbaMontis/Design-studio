@@ -17,12 +17,13 @@ function sendForm() {
   /** @type {!function(string, string)} */
   request.setRequestHeader('accept', 'application/json');
   /** @type {!function('string, function')} */
-  btn.addEventListener('click', function(e) {
+    btn.addEventListener('click', function(e) {
     e.preventDefault();
     /** @type {Object} */
     var formData = new FormData(form);
     /** @type {!function(object)} */
     request.send(formData);
+    
     /** @type {!function()} */
     request.onreadystatechange = function() {
       form.classList.add(HIDDEN_CLASS);

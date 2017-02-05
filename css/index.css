@@ -52,7 +52,9 @@ p {
 
 header {
   padding: 7% 0;
-  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid;
+  color: #fff;
+  margin-bottom: 7%;
 }
 
 header p {
@@ -61,6 +63,22 @@ header p {
 
 main {
   height: 100vh;
+}
+
+.view {
+  cursor: pointer;
+  width: 40%;
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 2% 5%;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  display: block;
+}
+
+.view:hover {
+  background: rgba(255, 255, 255, 1);
+  text-decoration: none;
 }
 
 .logo {
@@ -90,7 +108,7 @@ main {
 h1 {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-size: 8rem;
+  font-size: 6rem;
 }
 
 .container {
@@ -263,3 +281,4 @@ footer {
 .stop-scroll {
   overflow-y: hidden;
 }
+

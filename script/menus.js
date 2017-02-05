@@ -10,15 +10,21 @@ function toggle(element) {
 }
 
 function initEvent() {
+  /** @const {string} */ var OPEN_CLASS = 'open';
   /** @type {Element} */ var tabList = document.getElementById('tab-list');
   /** @type {Element} */ var burgerMenu = document.getElementById('burger-button');
-  var body = document.getElementsByTagName('body')[0];
+  /** @type {Element} */ var btn = document.getElementById('stripes');
+  /** @type {HTMLCollection} */ var stripes = btn.getElementsByTagName('span');
+  /** @type{Array.<string>} */
+  var menu = [burgerMenu, btn, stripes[0], stripes[1], stripes[2]];
+  var i;
   
-  burgerMenu.addEventListener('click', function() {
-    toggle(tabList);
-    // body.classList.toggle('stop-scroll');
-  });
-  
+  for (i = 0; i < menu.length; i++) {
+    menu[i].addEventListener('click', function() {
+      toggle(tabList);
+      btn.classList.toggle(OPEN_CLASS);
+    });
+  }
   document.addEventListener('click', function(e) {
     e = e || window.event;
     /** @type {EventTarget} */ var targ = e.target || e.srcElement;
@@ -26,8 +32,10 @@ function initEvent() {
       targ = targ.parentNode;
     }
     if (!tabList.classList.contains('hidden') &&
-      targ.getAttribute('id') !== 'burger-button') {
+      targ.getAttribute('id') !== 'burger-button' &&
+      targ.getAttribute('id') !== 'stripes' && targ.tagName !== 'SPAN') {
       toggle(tabList);
+      btn.classList.toggle(OPEN_CLASS);
     }
   })
 }
@@ -41,20 +49,6 @@ function hideMenu() {
   if (screenWidth < 768) {
     toggle(burgerMenu);
     toggle(tabList);
-  }
-}
-function disable_scroll() {
-  document.ontouchmove = function(e) { 
-    e.preventDefault(); 
-  }
-}
-
-function enable_scroll() {
-  /** @type {Element} */ var burgerMenu = document.getElementById('burger-button');
-  if (burgerMenu.classList.contains('hidden')) {
-    document.ontouchmove = function(e) { 
-      return true;
-    }
   }
 }
 

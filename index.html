@@ -18,32 +18,46 @@
 <main id="home" class="container">
   <nav id="nav-top">
     <div id="burger-button" class="hidden">
-        <p> . . . </p>
+      <div id="stripes">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
     
     <div id="burger-menu">
       <ul id="tab-list">
         <li><a href="#home" class="btn">HOME</a></li>
-        <li><a href="#portfolio" class="btn">PORTFOLIO</a></li>
-        <li>
-          <a href="#home" class="btn">
-            <div id="logo" class="logo"></div>
-          </a>
-        </li>
         <li><a href="#about" class="btn">ABOUT US</a></li>
+        <li><a href="#portfolio" class="btn">PORTFOLIO</a></li>
         <li><a href="#contacts" class="btn">CONTACTS</a></li>
       </ul>
     </div>
   </nav>
   <div class="content">
     <header>
-      <div class="header-logo logo"></div>
       <h1>Montis</h1>
       <p>design studio</p>
     </header>
+    <a href="#portfolio" class="view btn">VIEW PROJECTS</a>
   </div>
 </main>
 <!--/ Home -->
+
+<!-- About us -->
+<section id="about" class="container">
+  <div class="content">
+    <h2>WHO WE ARE</h2>
+    <div class="flexBox">
+      <img src="img/aboutUs.jpg" id="about-img" alt="Designer photo">
+      <div id="about-text">
+        <p><b>W</b>e are interior designers in Lviv that offer a bespoke service to create beautiful, functional spaces for residential clients, commercial firms and the retail and hospitality sectors. Also we offer our handmade unique furniture and interior accessories.</p>
+        <p><b>A</b>ll of our projects are directed by our deep understanding of client’s needs. Whether we’re renewing the interior decoration or undertaking a complex residential renovation, we work closely with the client to develop a solution that reflects their needs and personality. Our approach leads to interior spaces that enhance the existing architecture, look absolutely stunning and bring pleasure to all who live and work there.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ About us -->
 
 <!-- Portfolio -->
 <div id="portfolio" class="container">
@@ -126,21 +140,6 @@
   <!--/ Modal window content -->
 <!--/ Portfolio -->
 
-<!-- About us -->
-<section id="about" class="container">
-  <div class="content">
-    <h2>WHO WE ARE</h2>
-    <div class="flexBox">
-      <img src="img/aboutUs.jpg" id="about-img" alt="Designer photo">
-      <div id="about-text">
-        <p><b>W</b>e are interior designers in Lviv that offer a bespoke service to create beautiful, functional spaces for residential clients, commercial firms and the retail and hospitality sectors. Also we offer our handmade unique furniture and interior accessories.</p>
-        <p><b>A</b>ll of our projects are directed by our deep understanding of client’s needs. Whether we’re renewing the interior decoration or undertaking a complex residential renovation, we work closely with the client to develop a solution that reflects their needs and personality. Our approach leads to interior spaces that enhance the existing architecture, look absolutely stunning and bring pleasure to all who live and work there.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<!--/ About us -->
-
 <!-- Contact us-->
 <section id="contacts" class="container">
   <div class="content">
@@ -151,16 +150,15 @@
         <input type="text"
                name="name"
                placeholder="Your name"
-               pattern="[A-Za-z0-9]"
                required>
         <input type="email"
                name="email"
                placeholder="Your email"
-               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
                required>
         <textarea name="message" 
                   placeholder="Your message"
-                  rows="9">
+                  rows="9"
+                  required>
         </textarea>
         <button type="submit" id="submit">Submit</button>
       </div>
@@ -174,7 +172,7 @@
 <!--/ Contact us -->
 
 <!-- Address -->
-<section id="address" class="container">
+<section id="address" class="container container-push-down">
   <div class="content flexBox">
     <div id="map"></div>
     <address>

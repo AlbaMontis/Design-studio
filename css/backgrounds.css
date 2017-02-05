@@ -1,6 +1,15 @@
 main {
-  background: url(../img/jumbotron.jpg) center center no-repeat;
+  background: url('../img/jumbotron.jpg') center center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width:768px) {
+  main {
+    background: url('../img/mobile-jumbotron.jpg') center center no-repeat;
+    background-size: auto 80%;
+    /*background-attachment: fixed;*/
+  }
 }
 
 #interior {

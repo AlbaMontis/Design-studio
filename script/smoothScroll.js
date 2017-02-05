@@ -9,6 +9,7 @@
   /** @type {number} */ var targetOffset;
   /** @type {number} */ var currentPosition;
   /** @type {string} */ var translate;
+  var container;
   
   function getPageScroll() {
     /** @type {number} */ var yScroll;
@@ -28,8 +29,9 @@
   for (i = 0; i < length; i++) {
     button = buttons[i];
     button.addEventListener('click', function (event) {
-    
-      targetOffset = document.getElementById(event.target.hash.substr(1)).offsetTop;
+      
+      container = document.getElementById(event.target.hash.substr(1));
+      targetOffset = container.offsetTop;
       currentPosition = getPageScroll();
       body.classList.add('in-transition');
       
@@ -41,6 +43,9 @@
         translate = "translate(0, " + (currentPosition - targetOffset) + "px)";
       }
       
+      container.classList.contains('container') && container.id !== 'home' &&
+      container.classList.add('container-push-down');
+      console.log(container);
       body.style.WebkitTransform = translate;
       body.style.MozTransform = translate;
       body.style.transform = translate;
@@ -49,6 +54,7 @@
         body.classList.remove('in-transition');
         body.style.cssText = "";
         window.location.hash = event.target.hash;
+        window.scrollTo(0, targetOffset);
       }, animateTime);
     
       event.preventDefault();
