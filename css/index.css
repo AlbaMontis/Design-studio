@@ -40,7 +40,6 @@ p {
 }
 
 .flexBox {
-  display: -webkit-flex;
   display: -webkit-box;
   display: -ms-flexbox;
   -webkit-box-orient: horizontal;
@@ -106,6 +105,8 @@ header p {
   margin: 0 auto;
   font-family: 'Lato', sans-serif;
   display: block;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .view:hover {
@@ -149,6 +150,11 @@ header p {
 .portfolio-cover {
   background: rgba(192,192,192,0.3);
   height: 100%;
+  transition: all 1s ease-out;
+}
+
+.portfolio-cover:hover {
+  background: rgba(115, 114, 124,0.6);
 }
 
 .portfolio-card {
@@ -161,6 +167,8 @@ header p {
   margin: 0 auto;
   position: relative;
   top: 30%;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .portfolio-card:hover,
@@ -168,8 +176,7 @@ header p {
 .portfolio-card:focus,
 .portfolio-card .active {
   cursor: pointer;
-  background: rgba(255,255,255,1);
-  background-size: cover;
+  background: rgba(255,255,255,0.9);
 }
 
 .portfolio-card h2 {
@@ -206,6 +213,12 @@ textarea {
   border: 0;
 }
 
+input:focus,
+textarea:focus {
+  border: 1px solid #fff;
+  outline-color: #fff;
+}
+
 textarea {
   width: 100%;
   margin: 5px 5px 30px;
@@ -225,11 +238,12 @@ button[type="submit"] {
   padding: 10px 30px;
   font-size: 1.2rem;
   font-family: 'Lato', sans-serif;
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 button[type="submit"]:hover {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255,255,255,0.9);
   color: #000;
 }
 
@@ -272,7 +286,8 @@ address p {
   text-align: center;
   font-weight: bold;
   font-size: 1.5rem;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .social:hover {
@@ -293,4 +308,5 @@ footer {
   height: 90px;
   color: #fff;
   padding-top: 40px;
+  text-align: center;
 }

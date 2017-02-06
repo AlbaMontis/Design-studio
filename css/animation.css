@@ -1,4 +1,6 @@
-
 .in-transition { 
-  transition: transform 900ms ease;
+  -webkit-transition: -webkit-transform 900ms ease; 
+  transition: -webkit-transform 900ms ease; 
+  transition: transform 900ms ease; 
+  transition: transform 900ms ease, -webkit-transform 900ms ease;
 }
