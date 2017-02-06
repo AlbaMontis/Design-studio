@@ -1,28 +1,5 @@
-h1 {
-  font-size: 3rem;
-}
-
-header {
-  width: 70%;
-  margin: 0 auto;
-}
-
-header {
-  position: relative;
-  top: 150px;
-}
-
-.view {
-  position: relative;
-  top: 200px;
-}
-
 .container-push-down {
   padding-top: 40px;
-}
-
-#portfolio-menu {
-  height: 100vh;
 }
 
 .content,
@@ -33,10 +10,12 @@ address,
   margin: 0;
 }
 
-#about-text {
-  position: static;
+/* Jumbotron */
+main {
+  height: 90vh;
 }
 
+/* Navigation */
 #burger-button {
   display: block;
   width: 100%;
@@ -63,6 +42,7 @@ address,
   transition: .5s ease-in-out;
   cursor: pointer;
 }
+
 #stripes span {
   display: block;
   position: absolute;
@@ -141,6 +121,7 @@ address,
   width: 100%;
   height: 100vh;
   font-size: 2rem;
+  padding-top: 40px;
 }
 
 #tab-list li {
@@ -149,6 +130,28 @@ address,
 
 #tab-list li a {
   color: #fff;
+}
+
+/* Header */
+h1 {
+  font-size: 3rem;
+}
+
+header {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  top: 150px;
+}
+
+.view {
+  position: relative;
+  top: 200px;
+}
+
+/* Portfolio */
+#portfolio-menu {
+  height: 100vh;
 }
 
 .portfolio-card h2 {
@@ -165,17 +168,35 @@ address,
   width: 100%;
 }
 
+/* About us */
+#about-text {
+  position: static;
+}
+
+/* Contact us */
 input {
   width: 100%;
 }
 
+/* Device landscape orientation */
 @media all and (orientation:landscape) {
+  main {
+    height: 60vh;
+    background-size: 100% auto;
+    background-position-y: 25px;
+  }
+  
   #tab-list li {
     padding: 3% 0;
   }
   
   header {
-    padding-top: 10%;
+    padding-top: 5%;
+    top: 70px;
+  }
+  
+  .view {
+  top: 90px;
   }
   
   .portfolio-section {

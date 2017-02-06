@@ -1,11 +1,9 @@
-#logo {
-  float: left;
+.content {
+  margin: 0 auto;
+  width: 60%;
 }
 
-.header-logo {
-  display: none;
-}
-
+/* Navigation */
 #tab-list {
   display: block;
 }
@@ -13,8 +11,37 @@
 #tab-list li {
   display: inline-block;
 }
+/* Header */
+header {
+  margin: 7% 0;
+}
 
+h1 {
+  font-size: 6rem;
+}
+/* Portfolio */
 .portfolio-section {
   height: 70vh;
   width: 33.33%;
+}
+
+.portfolio-card h2 {
+  font-size: 2rem;
+  padding: 22% 0;
+}
+
+/* About us */
+#about-img {
+  padding-right: 8%;
+}
+
+/* Address */
+#address .flexBox {
+  border: 2px solid;
+  margin: 0 50px 60px 50px;
+  padding: 30px;
+}
+
+address {
+ text-align: left;
 }
