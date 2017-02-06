@@ -63,7 +63,7 @@ function modal() {
       if (targ.nodeType === 3) { 
         targ = targ.parentNode;
       }
-      chapter = targ.getAttribute('data');
+      chapter = targ.getAttribute('data-type');
       chapter && openModal();
     })
     
@@ -78,7 +78,6 @@ function modal() {
   
   initEvent();
   
-
 }
 
 modal();
