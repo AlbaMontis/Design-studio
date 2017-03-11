@@ -45,7 +45,6 @@
       
       container.classList.contains('container') && container.id !== 'home' &&
       container.classList.add('container-push-down');
-      console.log(container);
       body.style.WebkitTransform = translate;
       body.style.MozTransform = translate;
       body.style.transform = translate;
