@@ -163,7 +163,7 @@ input {
 /* Device landscape orientation */
 @media all and (orientation:landscape) {
   main {
-    height: 60vh;
+    height: 100vh;
     background-size: 100% auto;
     background-position-y: 25px;
   }
